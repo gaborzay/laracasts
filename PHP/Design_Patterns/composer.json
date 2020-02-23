@@ -1,0 +1,15 @@
+{
+    "name": "gabor/design-patterns",
+    "authors": [
+        {
+            "name": "Gabor Zay",
+            "email": "gaborzay@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src/AdapterPattern",
+            "App\\": "src/TemplateMethodPattern"
+        }
+    }
+}

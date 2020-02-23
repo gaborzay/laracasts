@@ -1,0 +1,1 @@
+Separate extensible behavior behind an interface, and flip the dependencies.
