@@ -1,5 +1,5 @@
 <?php require 'partials/head.php' ?>
 
-    <header>Contact</header>
+    <header>About Culture</header>
 
 <?php require 'partials/foot.php' ?>

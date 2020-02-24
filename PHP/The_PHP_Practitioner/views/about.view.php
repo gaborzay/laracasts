@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
+<?php require 'partials/head.php' ?>
 
-    <style>
-        header {
-            background-color: grey;
-            font-size: 2em;
-            text-align: center;
-            padding: 2em;
-        }
-    </style>
-</head>
-<body>
-<header>About</header>
-</body>
-</html>
+    <header>About</header>
+
+<?php require 'partials/foot.php' ?>
