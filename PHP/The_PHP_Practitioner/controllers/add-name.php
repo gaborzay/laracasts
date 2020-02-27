@@ -1,6 +1,6 @@
 <?php
 
-$app['database']->insert('events', [
+App::get('database')->insert('events', [
     'title' => $_POST['title'],
     'description' => $_POST['description'],
     'start' => date('Y-m-d 00:00:00'),
