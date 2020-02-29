@@ -1,9 +1,13 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Core\App;
 
 class UsersController
 {
-    public function index(){
+    public function index()
+    {
         $users = App::get('database')->all('users');
 
         return view('users', [
@@ -11,7 +15,8 @@ class UsersController
         ]);
     }
 
-    public function store(){
+    public function store()
+    {
 //        App::get('database')->insert('users', []);
 
         return redirect('users');
