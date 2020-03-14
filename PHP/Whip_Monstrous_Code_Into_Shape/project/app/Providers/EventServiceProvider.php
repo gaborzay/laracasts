@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Events\UserRegistered;
+use App\Listeners\AddUserToDefaultNewsLetterList;
+use App\Listeners\SendWelcomeEmail;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -15,8 +18,11 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
+        UserRegistered::class => [
+            SendWelcomeEmail::class,
+            AddUserToDefaultNewsLetterList::class
+            // Schedule a follow-up email.
+            // Update your stats, payments.
         ],
     ];
 
