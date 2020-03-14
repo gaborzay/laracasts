@@ -1,0 +1,12 @@
+{
+    "name": "gabor/php_bits",
+    "require": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "authors": [
+        {
+            "name": "Gabor Zay",
+            "email": "gaborzay@gmail.com"
+        }
+    ]
+}
