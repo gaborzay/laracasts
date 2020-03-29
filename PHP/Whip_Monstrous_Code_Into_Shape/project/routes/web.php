@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('purchases', 'PurchasesController@store');
 
 Route::get('users', 'UsersCOntroller@store');
+
+Route::get('team', 'TeamMembersController@store');

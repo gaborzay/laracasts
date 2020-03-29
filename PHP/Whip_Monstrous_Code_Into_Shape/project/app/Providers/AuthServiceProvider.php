@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+        'App\Team' => 'App\Policies\TeamMemberPolicy',
     ];
 
     /**
@@ -21,10 +21,14 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Gate $gate)
     {
         $this->registerPolicies();
 
-        //
+        $gate->before(function ($user) {
+            if ($user->isAdmin()) {
+                return true;
+            }
+        });
     }
 }

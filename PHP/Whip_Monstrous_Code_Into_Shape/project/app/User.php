@@ -54,4 +54,11 @@ class User extends Authenticatable
     {
         return new Stats($this);
     }
+
+    /**
+     * @return bool
+     */
+    public function isAdmin(){
+        return $this->id == 1;
+    }
 }
