@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, Completable, ParticipatesInForum;
 
     /**
      * The attributes that are mass assignable.
@@ -45,5 +45,13 @@ class User extends Authenticatable
         event(new UserRegistered($user));
 
         return $user;
+    }
+
+    /**
+     * @return Stats
+     */
+    public function stats()
+    {
+        return new Stats($this);
     }
 }
