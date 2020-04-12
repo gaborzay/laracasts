@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = factory('App\User')->make();
+
+    return view('welcome', compact('user'));
 });
 
 Route::get('purchases', 'PurchasesController@store');

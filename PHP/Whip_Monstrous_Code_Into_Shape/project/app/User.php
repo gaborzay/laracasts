@@ -58,7 +58,16 @@ class User extends Authenticatable
     /**
      * @return bool
      */
-    public function isAdmin(){
+    public function isAdmin()
+    {
         return $this->id == 1;
+    }
+
+    /**
+     * @return UserPresenter
+     */
+    public function present()
+    {
+        return new UserPresenter($this);
     }
 }
