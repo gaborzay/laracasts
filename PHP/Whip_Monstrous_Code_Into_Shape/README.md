@@ -9,9 +9,9 @@
 9. Consider Strategizing: Tutorials often illustrate the simplest possible path through your codebase to demonstrate a particular concept. But the truth is that, in real life, things can quickly become quite a bit more complicated. For example, imagine that your website allows users to sign up for subscriptions. The only problem is that, based upon the form request data, you'll need to execute this process in multiple ways. Sounds like you're going to have lots of conditionals in your controller, right? Well, maybe there's another option: strategies.
 10. Consider Normalizing: You'll frequently find yourself in the position of needing to normalize a particular value. Sure, the value might be in the proper format from the start; but it could also be in the form of a function that you need to trigger. Or maybe, based upon various business rules, you need to first modify the value before continuing on. Well, if you're not careful, your code can get pretty messy, pretty fast. One option you might consider is extracting all of the normalizing-specific code into either its own method, or a different class entirely. In this episode, we'll cycle through a number of refactors that you might consider.
 11. Consider View Models: When you find yourself repeating the same view logic over and over, it might be time to extract that code into a reusable method. At first, developers typically reach for the model. However, you may quickly decide that you'd prefer a more dedicated class for this sorts of logic. In such cases, consider creating view presenters - or as some refer to them: view models.
-12.
-13.
-14.
+12. Too Many Method Parameters is a Sign: As a general guideline, when you find yourself wanting to create a method with four or more parameters, that might be an indication that there's a missing class. You may want to refactor. As always, rules are meant to be broken, but, nonetheless, train yourself to be suspicious of such methods.
+13. Consider Decorating: The next option you have when cleaning up monstrous code is opting for decorators. This allows you to stack on behavior to an existing class dynamically. I'll show you how; it's easy!
+14. Consider Fluent Interfaces: Fluent interfaces often get a bad rap, but the truth is that there are countless scenarios where you may consider leveraging them. In this episode, we'll review the basic definition and makeup for a fluent API, and will then move on discussing a handful of real-life examples in the wild.
 15.
 16.
 17.

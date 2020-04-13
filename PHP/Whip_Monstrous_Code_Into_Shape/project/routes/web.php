@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('welcome', compact('user'));
 });
 
+Route::get('decorator', 'TutorialsController@store');
+
 Route::get('purchases', 'PurchasesController@store');
 
 Route::get('users', 'UsersCOntroller@store');
