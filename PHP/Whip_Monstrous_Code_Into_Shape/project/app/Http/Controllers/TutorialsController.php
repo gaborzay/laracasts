@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Tutorials\PublishesTutorial;
-
 use App\Tutorials\TweetsTutorial;
 use Illuminate\Http\Request;
 

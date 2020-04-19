@@ -12,9 +12,9 @@
 12. Too Many Method Parameters is a Sign: As a general guideline, when you find yourself wanting to create a method with four or more parameters, that might be an indication that there's a missing class. You may want to refactor. As always, rules are meant to be broken, but, nonetheless, train yourself to be suspicious of such methods.
 13. Consider Decorating: The next option you have when cleaning up monstrous code is opting for decorators. This allows you to stack on behavior to an existing class dynamically. I'll show you how; it's easy!
 14. Consider Fluent Interfaces: Fluent interfaces often get a bad rap, but the truth is that there are countless scenarios where you may consider leveraging them. In this episode, we'll review the basic definition and makeup for a fluent API, and will then move on discussing a handful of real-life examples in the wild.
-15.
-16.
-17.
+15. Hands On Refactoring: Let's put some of the skills we've learned in this series to the test. We'll take an existing real-life class, and refactor it using the techniques we reviewed in episode eight of this series.
+16. 
+17. Consider Query Objects: Most tutorials demonstrate the simplest possible Eloquent queries. You know, the one where you do Post::all() and move on. But, in reality, you're often writing significantly more complex queries. So what do we do, when they get too large and gross to keep in the controller? Well, we could extract to the model, we could create a repository, or we could make a single-use query class. Let me show you how; it's easy!
 18.
 19.
 20.
