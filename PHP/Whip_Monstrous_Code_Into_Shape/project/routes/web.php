@@ -13,12 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
- * FlightsController
- *  GET /flights => all flights
- *  index, create, show, edit, store, update, destroy
- *  UPDATE /flights/{id} => update the flight
- */
+Route::resource('conversations', 'ConversationsController');
+Route::post('subscriptions', 'SubscriptionsController@store');
 
 Route::get('/', function () {
     $user = factory('App\User')->make();
